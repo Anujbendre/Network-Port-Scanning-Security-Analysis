@@ -1,0 +1,15 @@
+# Nmap 7.991 scan initiated Thu Sep 10 13:38:58 2026 as: D:\\Nmap\\nmap.exe -oN D:\\Network-Port-Scanning-Security-Analysis\\scans\\port-scanning\\basic-scan.txt 10.59.47.15
+Nmap scan report for 10.59.47.15
+Host is up (0.00051s latency).
+Not shown: 992 closed tcp ports (reset)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+2179/tcp open  vmrdp
+2869/tcp open  icslap
+5432/tcp open  postgresql
+
+# Nmap done at Thu Sep 10 13:38:59 2026 -- 1 IP address (1 host up) scanned in 1.11 seconds

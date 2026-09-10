@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///D:/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.991 scan initiated Thu Sep 10 13:40:20 2026 as: D:\\Nmap\\nmap.exe -p- -oX D:\\Network-Port-Scanning-Security-Analysis\\scans\\port-scanning\\full-tcp-scan.xml 10.59.47.15 -->
+<nmaprun scanner="nmap" args="D:\\Nmap\\nmap.exe -p- -oX D:\\Network-Port-Scanning-Security-Analysis\\scans\\port-scanning\\full-tcp-scan.xml 10.59.47.15" start="1789027820" startstr="Thu Sep 10 13:40:20 2026" version="7.991" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1789027821" endtime="1789027826"><status state="up" reason="localhost-response" reason_ttl="0"/>
+<address addr="10.59.47.15" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65518">
+<extrareasons reason="reset" count="65518" proto="tcp" ports="1-134,136,138,140-444,446-901,903-911,913-2178,2180-2868,2870-5039,5041-5431,5433-7679,7681-49663,49669-49670,49672-65535"/>
+</extraports>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="137"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ns" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="902"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="iss-realsecure" method="table" conf="3"/></port>
+<port protocol="tcp" portid="912"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="apex-mesh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2179"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="vmrdp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2869"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="icslap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5040"><state state="open" reason="syn-ack" reason_ttl="128"/></port>
+<port protocol="tcp" portid="5432"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="postgresql" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7680"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="pando-pub" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="128"/></port>
+<port protocol="tcp" portid="49665"><state state="open" reason="syn-ack" reason_ttl="128"/></port>
+<port protocol="tcp" portid="49666"><state state="open" reason="syn-ack" reason_ttl="128"/></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="128"/></port>
+<port protocol="tcp" portid="49668"><state state="open" reason="syn-ack" reason_ttl="128"/></port>
+<port protocol="tcp" portid="49671"><state state="open" reason="syn-ack" reason_ttl="128"/></port>
+</ports>
+<times srtt="334" rttvar="475" to="100000"/>
+</host>
+<runstats><finished time="1789027826" timestr="Thu Sep 10 13:40:26 2026" summary="Nmap done at Thu Sep 10 13:40:26 2026; 1 IP address (1 host up) scanned in 6.79 seconds" elapsed="6.79" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,4 @@
+# Nmap 7.991 scan initiated Thu Sep 10 13:34:28 2026 as: D:\\Nmap\\nmap.exe -sn -oN D:\\Network-Port-Scanning-Security-Analysis\\scans\\discovery\\host-discovery.txt 10.59.47.15
+Nmap scan report for 10.59.47.15
+Host is up.
+# Nmap done at Thu Sep 10 13:34:29 2026 -- 1 IP address (1 host up) scanned in 0.95 seconds

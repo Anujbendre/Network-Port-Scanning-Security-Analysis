@@ -1,0 +1,7 @@
+# Nmap 7.991 scan initiated Thu Sep 10 13:36:17 2026 as: D:\\Nmap\\nmap.exe -sn -oN D:\\Network-Port-Scanning-Security-Analysis\\scans\\discovery\\network-discovery.txt 10.59.47.0/24
+Nmap scan report for 10.59.47.21
+Host is up (0.0052s latency).
+MAC Address: 56:1F:88:14:AE:76 (Unknown)
+Nmap scan report for 10.59.47.15
+Host is up.
+# Nmap done at Thu Sep 10 13:36:21 2026 -- 256 IP addresses (2 hosts up) scanned in 3.62 seconds

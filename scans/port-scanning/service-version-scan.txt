@@ -1,0 +1,17 @@
+# Nmap 7.991 scan initiated Thu Sep 10 13:45:48 2026 as: D:\\Nmap\\nmap.exe -sV -oN D:\\Network-Port-Scanning-Security-Analysis\\scans\\port-scanning\\service-version-scan.txt 10.59.47.15
+Nmap scan report for 10.59.47.15
+Host is up (0.000060s latency).
+Not shown: 992 closed tcp ports (reset)
+PORT     STATE SERVICE         VERSION
+135/tcp  open  msrpc           Microsoft Windows RPC
+139/tcp  open  netbios-ssn     Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+902/tcp  open  ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+912/tcp  open  vmware-auth     VMware Authentication Daemon 1.0 (Uses VNC, SOAP)
+2179/tcp open  vmrdp?
+2869/tcp open  http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5432/tcp open  postgresql      PostgreSQL DB
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep 10 13:46:01 2026 -- 1 IP address (1 host up) scanned in 12.46 seconds

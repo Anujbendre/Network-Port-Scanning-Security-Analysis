@@ -1,0 +1,137 @@
+NETWORK PORT SCANNING & SECURITY ANALYSIS
+======================================================================
+
+Target: 10.59.47.15
+Total Results: 8
+
+======================================================================
+SECURITY FINDINGS
+======================================================================
+
+Finding 01
+----------------------------------------------------------------------
+Port           : 135
+Protocol       : tcp
+State          : open
+Service        : msrpc
+Product        : Microsoft Windows RPC
+Version        : Unknown
+Risk Level     : Medium Attention
+
+Observation:
+Port 135 is open and the service 'msrpc' was detected.
+
+Recommendation:
+Review Windows RPC exposure and restrict access using Windows Firewall and appropriate network rules.
+
+Finding 02
+----------------------------------------------------------------------
+Port           : 139
+Protocol       : tcp
+State          : open
+Service        : netbios-ssn
+Product        : Microsoft Windows netbios-ssn
+Version        : Unknown
+Risk Level     : Medium Attention
+
+Observation:
+Port 139 is open and the service 'netbios-ssn' was detected.
+
+Recommendation:
+Review NetBIOS exposure and disable it if it is not required. Restrict access to trusted networks.
+
+Finding 03
+----------------------------------------------------------------------
+Port           : 445
+Protocol       : tcp
+State          : open
+Service        : microsoft-ds
+Product        : Unknown
+Version        : Unknown
+Risk Level     : High Attention
+
+Observation:
+Port 445 is open and the service 'microsoft-ds' was detected.
+
+Recommendation:
+Review SMB exposure. Restrict SMB access using Windows Firewall and network controls, and ensure Windows is fully updated.
+
+Finding 04
+----------------------------------------------------------------------
+Port           : 902
+Protocol       : tcp
+State          : open
+Service        : vmware-auth
+Product        : VMware Authentication Daemon
+Version        : 1.10
+Risk Level     : Low Attention
+
+Observation:
+Port 902 is open and the service 'vmware-auth' was detected.
+
+Recommendation:
+Verify whether this service is required. If unnecessary, disable it. Otherwise restrict access using firewall rules and keep the service securely configured and updated.
+
+Finding 05
+----------------------------------------------------------------------
+Port           : 912
+Protocol       : tcp
+State          : open
+Service        : vmware-auth
+Product        : VMware Authentication Daemon
+Version        : 1.0
+Risk Level     : Low Attention
+
+Observation:
+Port 912 is open and the service 'vmware-auth' was detected.
+
+Recommendation:
+Verify whether this service is required. If unnecessary, disable it. Otherwise restrict access using firewall rules and keep the service securely configured and updated.
+
+Finding 06
+----------------------------------------------------------------------
+Port           : 2179
+Protocol       : tcp
+State          : open
+Service        : vmrdp
+Product        : Unknown
+Version        : Unknown
+Risk Level     : Low Attention
+
+Observation:
+Port 2179 is open and the service 'vmrdp' was detected.
+
+Recommendation:
+Verify whether this service is required. If unnecessary, disable it. Otherwise restrict access using firewall rules and keep the service securely configured and updated.
+
+Finding 07
+----------------------------------------------------------------------
+Port           : 2869
+Protocol       : tcp
+State          : open
+Service        : http
+Product        : Microsoft HTTPAPI httpd
+Version        : 2.0
+Risk Level     : Review Required
+
+Observation:
+Port 2869 is open and the service 'http' was detected.
+
+Recommendation:
+Review the web service configuration, authentication, TLS settings, and exposure to untrusted networks.
+
+Finding 08
+----------------------------------------------------------------------
+Port           : 5432
+Protocol       : tcp
+State          : open
+Service        : postgresql
+Product        : PostgreSQL DB
+Version        : Unknown
+Risk Level     : Low Attention
+
+Observation:
+Port 5432 is open and the service 'postgresql' was detected.
+
+Recommendation:
+Verify whether this service is required. If unnecessary, disable it. Otherwise restrict access using firewall rules and keep the service securely configured and updated.
